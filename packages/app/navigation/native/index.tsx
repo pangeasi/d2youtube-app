@@ -1,30 +1,28 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-import { HomeScreen } from '../../features/home/screen'
-import { UserDetailScreen } from '../../features/user/detail-screen'
+import { Playlists } from '../../features/Playlists'
+import { Playlist } from '../../features/Playlist'
 
 const Stack = createNativeStackNavigator<{
-  home: undefined
-  'user-detail': {
-    id: string
-  }
+  playlists: undefined
+  playlist: { id: string }
 }>()
 
 export function NativeNavigation() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="home"
-        component={HomeScreen}
+        name="playlists"
+        component={Playlists}
         options={{
-          title: 'Home',
+          title: 'Playlists',
         }}
       />
       <Stack.Screen
-        name="user-detail"
-        component={UserDetailScreen}
+        name="playlist"
+        component={Playlist}
         options={{
-          title: 'User',
+          title: 'Playlist',
         }}
       />
     </Stack.Navigator>

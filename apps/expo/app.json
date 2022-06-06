@@ -1,13 +1,18 @@
 {
   "expo": {
-    "name": "solito-blank",
-    "slug": "solito-blank",
+    "name": "d2youtube-app",
+    "slug": "d2youtube-app",
     "version": "1.0.0",
     "sdkVersion": "44.0.0",
     "scheme": "solito-blank",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "ios": {
       "bundleIdentifier": "com.solito.blank"
-    }
+    },
+    "description": "d2youtube is a youtube playlist player with storageble audios",
+    "githubUrl": "https://github.com/pangeasi/d2youtube-app"
   }
 }
